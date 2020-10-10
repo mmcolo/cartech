@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-md-6">
+        <h1>
+            <u>Initialisation du project:</u>            
+        </h1>
+        <div class="desc">
+            <h3>Angular CLI:</h3>
+            <p>On va commencer par installer le CLI de Angular en  globale sur notre machine avec la commande suivante (avec sudo si besoin):</p>
+        </div>
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop: <span class="cmd"> npm install -g @angular/cli</span></div></li>
+        </ol>
+        <div class="desc">
+            <p>Maintenant, la commande <span class="expl">ng</span> est disponible depuis la ligne de commandes depuis n'importe quel dossier de l'ordinateur</p>
+        </div>
+        <div class="bg-secondary info">
+            <p>
+            Pour plus d'informations, vous pourrez trouver la documentation de chaque élément sur le site corespondant:
+            </p>
+            <ul>
+                <li>node.js: <a href="https://node.js.org/en/docs/"><b>https://node.js.org/en/docs/</b></a></li>
+                <li>npm: <a href="https://docs.npmjs.com/"><b>https://docs.npmjs.com/</b></a></li>
+                <li>ng: <a href="https://cli.angular.io/"><b>https://cli.angular.io/</b></a></li>
+            </ul>
+        </div>
+        <div class="desc">
+            <h3>Création du projet</h3>
+            <p>
+                Pour créer un nouveau projet Angular, naviguez vers le dossier souhaité depuis une ligne de commande et saisissez la commande suivante :
+            </p>
+        </div>
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop: <span class="cmd"> ng new clamer --skip-tests = true</span></div></li>
+        </ol>     
+        <div class="desc">
+            <p>Ensuite, navigez dans le dossier du projeet et lancez le serveur de developpement avec la commande suivante:</p>
+        </div>   
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop: <span class="cmd"> cd clamer</span></div></li>
+        </ol>
+        <div class="desc">
+            <p>Ce qui va nous permettre de installer bootstrap dans notre nouveau projet, en exécutant la commande suivante:</p>
+        </div>
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop/clamer: <span class="cmd"> npm install bootstrap --save</span></div></li>
+        </ol>
+        <div class="desc">
+            <p>
+                Une fois l'installation términer nous alons ouvrir notre project avec notre editer de text favoris. Visual studio code pour ma part:
+            </p>
+        </div>
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop/clamer: <span class="cmd"> code .</span></div></li>
+        </ol>
+        <div class="desc">
+            <p>bootstrap est installer dans notre projet mais n'est pas encore intégrer à ce dernier. <br>Pour ce faire. Ouvrez le fichier  <span class="expl">angular.json</span>  du dossier source de votre projet.  Dans "architect/build/options", modifiez l'array  <span class="expl">styles</span>  comme suit: </p>
+        </div>
+        <div class="caption mb-3">
+            <img src="assets/howdoit/addBoot.PNG" alt="bootstrap">
+        </div>
+        <div class="desc">
+            <p>Pour finir on peut lancer un notre serveur de développement avec la commande suite:</p>
+        </div>
+        <ol class="code">
+            <li><div class="shell">~monPc@mcl/Desktop/clamer: <span class="cmd"> ng serve</span></div></li>
+        </ol>
+        <div class="desc">
+            <p>Si tout se passe bien, vous verrez les informations du serveur qui se lance à l'adresse localhost:4200 et votre navigateur préféré se lancera automatiquement avec le message "Welcome to app!!" et le logo Angular.</p>
+
+            Congratulation!!! We done!
+        </div>
+    </div>
+</div>

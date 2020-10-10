@@ -1,0 +1,19 @@
+<div class="row mt-5">
+    <div class="col-sm-12 col-md-6">
+        <div class="list-group">
+            <div class="list-group-item" *ngFor="let item of cars; index as i">
+                <a routerLink="/car/{{i}}">{{item.marque}}, {{item.modele}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <div class="list-group">
+            <div class="list-group-item text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, commodi, ducimus, velit pariatur error quos quo quis maiores debitis dolor sunt illum ipsam ut ex necessitatibus iste minima officiis perferendis dolorum tenetur? Fugiat est recusandae veniam autem minima eaque, ipsam inventore, vel tempore sint quibusdam praesentium officiis placeat, eos iusto. 
+            </div>
+            <div class="list-group-item text-center">
+                <a routerLink="/howdoit" class="btn btn-secondary">Tutoriel</a>
+            </div>
+        </div>
+    </div>
+</div>

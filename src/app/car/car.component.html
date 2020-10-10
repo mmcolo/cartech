@@ -1,0 +1,38 @@
+<div class="row">
+    <a routerLink="/home" class="btn btn-primary home" (click)="unsetBg()">Home</a>
+    <div class="col-sm-12">
+      <div class="img-car text-center">
+        <img src="{{oneCar.urlImage}}" alt="car">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 mt-3">
+        <div class="list-group list-group-flush left text-center" id="left">
+            <div class="list-group-item" >
+                {{oneCar.marque}}
+            </div>
+            <div class="list-group-item" >
+                {{oneCar.modele}}
+            </div>
+            <div class="list-group-item" >
+                {{oneCar.annee}}
+            </div>
+            <div class="list-group-item" >
+                {{oneCar.puissance}}
+            </div>
+            <div class="list-group-item" >
+                {{oneCar.transmition}}
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 mt-3">
+        <div class="list-group list-group-flush right text-center" id="right">
+            <div class="list-group-item">RayanDaxton</div>
+            <div class="list-group-item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos incidunt harum illum ab officia, iusto error nostrum cumque aspernatur.
+            </div>
+        </div>      
+    </div>
+    <div class="mr-auto ml-auto">
+        <div class="btn bg-dark text-white"><h2>{{oneCar.modele}} - {{oneCar.annee}}</h2></div>
+    </div>
+</div>
